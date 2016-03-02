@@ -1,0 +1,28 @@
+/*预定义样式*/
+a{	display: inline-block;
+	text-decoration: none;
+	border:none;
+}
+/*预定义样式*/
+.lang{
+	padding:2px 8px;
+	color:#fff;
+	font-size:1.2em;
+}
+.selected{
+	background:#01928a;
+	border-radius: 0.3em;
+}
+#lang-panel{
+	border-radius: 5px;
+    font-size: 0.8em;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    z-index: 100;
+}
+.section { 
+	text-align: center; 
+	font: 50px "Microsoft Yahei"; 
+	color: #fff;
+}
