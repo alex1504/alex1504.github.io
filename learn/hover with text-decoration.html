@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Template</title>
+</head>
+<body>
+    <a href="#">鼠标悬浮下划线动画效果</a>
+<style>
+a{	
+	position:relative;
+	color:#000;
+	text-decoration: none;
+}
+
+
+a::after{
+    content:"";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color:#000;
+    visibility:hidden;
+    transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+    -o-transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+   -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+a:hover::after{
+	visibility: visible;
+	 -webkit-transform: scaleX(1);
+  -o-transform: scaleX(1);
+  transform: scaleX(1);
+}
+</style>
+</body>
+</html>

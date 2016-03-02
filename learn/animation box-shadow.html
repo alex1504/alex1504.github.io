@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>CSS3动画盒子阴影</title>
+<style>
+
+body{
+	background-color: #ccc;
+}
+
+#box-slow{
+	width: 100px;
+	height: 100px;
+	background-color: #fff;
+	margin:50px auto 20px;
+	box-shadow: 0px 1px 2px rgba(0,0,0,0.15);
+	transition:all 0.3s ease-in-out;
+}
+#box-slow:hover{
+	transform: scale(1.2);
+	border-radius: 50%;
+	box-shadow: 0 5px 15px rgba(0,0,0,3);
+}
+#box-fast{
+	width: 100px;
+	height: 100px;
+	background-color: #fff;
+	margin:60px auto 20px;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+	position: relative;
+	transition: all 0.3s ease-in-out;
+}
+#box-fast::after{
+	content: "";
+	position: absolute;                       /*注意加绝对定位*/
+	width: 100%;    
+	height: 100%;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+	opacity: 0;
+	transition: all 0.3s ease-in-out;
+}
+#box-fast:hover{
+	transform: scale(1.2);
+}
+#box-fast:hover::after{
+	opacity: 1;
+}
+</style>
+</head>
+<body>
+
+	<div id="box-slow">
+	
+	</div>
+	<div style="text-align: center">用box-shadow会导致浏览器重绘，对于手机浏览器性能较低，会有卡顿</div>
+
+	<div id="box-fast">
+
+	</div>
+	<div style="text-align: center">transform和opacity属性是少数执行动画不进行重绘操作的CSS属性，通过他们可以优化动画性能。参考<a href="http://www.htmleaf.com/ziliaoku/qianduanjiaocheng/animate-box-shadow.html">链接</a></div>
+
+</body>
+</html>
