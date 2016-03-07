@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Template</title>
+		<link rel="stylesheet" type="text/css" href="loaders.min.css">
+		<script src="http://cdn.bootcss.com/jquery/3.0.0-beta1/jquery.js"></script>
+		<script type="text/javascript" src="loaders.css.js"></script>
+<style>
+
+	.ball-grid-pulse > div {
+ background: orange;
+}
+</style>
+<script>
+	function addLoadEvent(func){
+		var oldonload=window.onload;
+		if(typeof window.onload!="function"){
+			window.onload=func;
+		}
+		else{
+			window.onload=function(){
+				oldonload();
+				func();
+			}
+		}
+	}
+	addLoadEvent();
+
+</script>
+</head>
+<body>
+
+		<div class="loader-inner ball-pulse">aaa</div>
+		<img src="1.jpg">
+		<img src="2.jpg">
+		<img src="3.jpg">
+		<img src="4.jpg">
+		<img src="5.jpg">
+		<img src="6.jpg">
+		<img src="7.jpg">
+		<img src="8.jpg">
+		<img src="9.jpg"><img src="1.jpg">
+		<img src="2.jpg">
+		<img src="3.jpg">
+		<img src="4.jpg">
+		<img src="5.jpg">
+		<img src="6.jpg">
+		<img src="7.jpg">
+		<img src="8.jpg">
+			<img src="9.jpg"><img src="1.jpg">
+		<img src="2.jpg">
+		<img src="3.jpg">
+		<img src="4.jpg">
+		<img src="5.jpg">
+		<img src="6.jpg">
+		<img src="7.jpg">
+		<img src="8.jpg">
+			<img src="9.jpg"><img src="1.jpg">
+		<img src="2.jpg">
+		<img src="3.jpg">
+		<img src="4.jpg">
+		<img src="5.jpg">
+		<img src="6.jpg">
+		<img src="7.jpg">
+		<img src="8.jpg">
+
+</body>
+</html>
