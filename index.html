@@ -9,10 +9,13 @@
 <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" >
 <link href="http://cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
 <link href="css/style.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="./loaders.min.css" />
+
 	<title>Jerry</title>
 <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
+<script src="./loaders.css.js"></script>
 </head>
 <body>
 	<div id="link-panel">
@@ -23,7 +26,18 @@
 			<li><a href="item" target="_blank"><i class="fa fa-bars fa-fw"></i>Item</a></li>
 			<li><a href="cv" target="_blank"><i class="fa fa-file fa-fw"></i>CV</a></li>
 			<li><a href="mailto:alex1504@163.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a></li>
+			<div class="loader-inner ball-pulse"></div>
 
 	</div>
+
+	<script>
+document.addEventListener('DOMContentLoaded', function () {
+ document.querySelector('main').className += 'loaded';
+});
+
+$(window).load(function(){
+		$('.loader-inner').fadeOut(500);
+})
+</script>
 </body>
 </html>
