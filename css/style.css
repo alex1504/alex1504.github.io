@@ -22,9 +22,9 @@ html.body{
 }
 
 body{
-   	background:rgba(0,216,204,1); ;
+   	background:#22c3aa; ;
    	color:#fff;
-   	font-family:'paragon';
+   	font-family:'微软雅黑';
    	position: relative;
 }
 
@@ -37,7 +37,7 @@ img{
 	text-align: center;
 	font-size: 2rem;
 	padding:0 10px;
-	margin: 10px auto;
+	margin: 0px auto;
 	position: relative;
 }
 
@@ -61,7 +61,6 @@ img{
 	-o-transition: all .8s ease-in-out 0s;
 }
 #link-panel a:hover{
-	font-size:2.5rem;
 	color: #fff;
 
 }
@@ -78,9 +77,9 @@ img{
 	transform: scaleX(0);
 	-webkit-transform: scaleX(0);
 	-o-transform: scaleX(0);
-	transition: all .8s ease-in-out 0s;
-	-webkit-transition: all .8s ease-in-out 0s;
-	-o-transition: all .8s ease-in-out 0s;
+	transition: all .3s ease-in-out 0s;
+	-webkit-transition: all .3s ease-in-out 0s;
+	-o-transition: all .3s ease-in-out 0s;
 }
 #link-panel a:hover::before{
 	visibility: visible;
@@ -89,3 +88,39 @@ img{
 	-o-transform: scaleX(1);
 }
 
+@keyframes fadein{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+@keyframes radius{
+	from{
+		border-radius: 50%;
+		-webkit-border-radius:50%;
+		-o-border-radius:50%;
+	}
+	to{
+		border-radius: 15%;
+		-webkit-border-radius:15%;
+		-o-border-radius:15%;
+	}
+}
+.avatar{
+	margin: 10px auto -20px; 
+	width: 150px;
+	height: 150px;
+	animation: fadein 2s linear;
+}
+.avatar img{
+	transition: all 2s;
+	cursor: pointer;
+	width: 150px;
+	height: 150px;
+	border-radius:50%;
+}
+.avatar img:hover{
+	animation:radius 2s;
+}
