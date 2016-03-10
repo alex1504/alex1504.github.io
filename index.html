@@ -1,46 +1,9 @@
 <!DOCTYPE html>
-
 <html>
 <head>
 <meta charset="UTF-8">
 <meta content="width=100%, initial-scale=1" name="viewport">
 <meta property="wb:webmaster" content="15aff8398a7f5bc1" />
-
-<style>
-
-.mvBox{height:15px; background:#F5FAFD url(images/test2.jpg) no-repeat left center; width:471px; position:relative; padding:0 30px; margin:0 auto;}
-.mvBtn{position:absolute; left:50px; top:0;}
-.mvTxt{height:50px; line-height:50px; width:531px; text-align:center; font-size:30px; color:#29B6FF; font-family:Arial; margin:0 auto;}
-</style>
-<script>
-	var delVal=50;
-function autoMove(){
-    delVal++;
-    if(delVal>400){
-       delVal=50; 
-    }
-    $(".mvBtn").css("left",delVal);
-}
-setInterval(autoMove,8);
-var deNum=0;
-function autoTsq(){
-   $(".mvSq").css("color","#F5FAFD");
-   setTimeout(function(){$(".mvSq").eq(0).css("color","#29B6FF")},0);
-   setTimeout(function(){$(".mvSq").eq(1).css("color","#29B6FF")},500);
-   setTimeout(function(){$(".mvSq").eq(2).css("color","#29B6FF")},1000);
-}
-setInterval(autoTsq,1500);
-
-var func=function(){
-	$(".mvTxt").fadeOut();
-	$(".mvBox").fadeOut();
-}
-$(document).ready(function(){
-	func()
-})
-</script>
-
-
 <link href="images/favicon.ico" rel="shortcut icon">
 <link href="css/bootstrap.min.css" rel="stylesheet" >
 <link href="http://cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
@@ -49,7 +12,6 @@ $(document).ready(function(){
 <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
-
 
 </head>
 <body>
@@ -64,13 +26,6 @@ $(document).ready(function(){
 			<li><a href="mailto:alex1504@163.com" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a></li>
 
 	</div>
-
-
-	<div class="mvTxt">Loading<span class="mvSq">.</span><span class="mvSq">.</span><span class="mvSq">.</span></div>
-	<div class="mvBox">
- 	<img class="mvBtn" src="images/test1.jpg" />
-	</div>
-
 
 </body>
 </html>
