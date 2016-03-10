@@ -16,6 +16,15 @@
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 <script src="./loaders.css.js"></script>
+	<script>
+document.addEventListener('DOMContentLoaded', function () {
+ document.querySelector('main').className += 'loaded';
+});
+
+$(window).load(function(){
+		$('.loader-inner').fadeOut(500);
+})
+</script>
 </head>
 <body>
 	<div id="link-panel">
@@ -30,14 +39,6 @@
 
 	</div>
 
-	<script>
-document.addEventListener('DOMContentLoaded', function () {
- document.querySelector('main').className += 'loaded';
-});
 
-$(window).load(function(){
-		$('.loader-inner').fadeOut(500);
-})
-</script>
 </body>
 </html>
