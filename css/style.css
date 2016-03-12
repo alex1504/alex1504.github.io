@@ -113,9 +113,9 @@ img{
 	width: 150px;
 	height: 150px;
 	animation: fadein 2s linear;
+	-webkit-animation: fadein 2s linear;
 }
 .avatar img{
-	transition: all 2s;
 	cursor: pointer;
 	width: 150px;
 	height: 150px;
