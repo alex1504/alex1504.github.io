@@ -76,7 +76,7 @@ img{
 	background: url(../images/header-bg-sm.jpg) no-repeat center center;
 }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 640px) {
 	.header{
 	background: none;
 }
@@ -104,8 +104,6 @@ img{
 	background:#69c3b5;
 	position: absolute;
 	top: 25px;
-
-
 	}
 	.title h1::before{
 		left:300px;
@@ -116,37 +114,27 @@ img{
 }
 /*导航部分*/
 .nav{
-	width: 98%;
 	margin: 30px auto 0;
 }
-.nav a div:hover{
-	opacity: 0.8;
+.nav div{
+	width: 80%;                           /*不定义高度，这样可以随着宽度等比例缩小适应小屏幕*/
+	margin: 30px auto 0;
+	
 }
-.nav a{
+.nav div a{
+	width: 80%;
 	display: block;
-	height: 100px;
-	margin-bottom: 20px;
+	margin:0 auto;
+	
 }
-.nav a div{
-	height: 100px;
-	margin-bottom: 20px;	
-	background-size: contain;       /*使图片背景适应容器*/
+.nav a:hover{
+	opacity: 0.8;
+	
 }
-@media screen and (max-width: 400px) {
 
-	.nav a, .nav a div{
-	height: 50px
+@media screen and (max-width: 960px) {
+	.nav div{
+		margin-top: 10px;	
 	}
-}
-.nav-blog{
-	background:url(../images/nav-blog.jpg) no-repeat center center;
-}
-.nav-jianshu{
-	background:url(../images/nav-jianshu.jpg) no-repeat center center;
-}
-.nav-weibo{
-	background:url(../images/nav-weibo.jpg) no-repeat center center;
-}
-.nav-photograph{
-	background:url(../images/nav-photograph.jpg) no-repeat center center;
+	
 }
