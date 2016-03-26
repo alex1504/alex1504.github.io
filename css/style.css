@@ -29,7 +29,7 @@ body{
 }
 
 img{
-	max-width: 100%;
+	max-width: 100%;                               /*图片响应式的重要代码，防止图片被拉伸*/
 }
 
 .title{
