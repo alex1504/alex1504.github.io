@@ -2,12 +2,10 @@
 html{
 	font-size:62.5%;
 }
-
 body{
    	height: 100%;
    	width:100%;
-   	margin:0;
-   	padding:0;
+   
 }
 a{
 	text-decoration: none;
@@ -119,22 +117,17 @@ img{
 .nav div{
 	width: 80%;                           /*不定义高度，这样可以随着宽度等比例缩小适应小屏幕*/
 	margin: 30px auto 0;
-	
 }
 .nav div a{
 	width: 80%;
 	display: block;
 	margin:0 auto;
-	
 }
 .nav a:hover{
 	opacity: 0.8;
-	
 }
-
 @media screen and (max-width: 960px) {
 	.nav div{
 		margin-top: 10px;	
 	}
-	
 }
