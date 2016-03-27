@@ -33,9 +33,12 @@ img{
 .title{
 	text-align: center;
 }
-
-.content-wrap{
+#container{
 	width: 75%;
+	margin: 0 auto;
+}
+.content-wrap{
+	width: 100%;
 	padding-bottom: 50px;
 	margin: 70px auto;
 	background-color: #fff;
