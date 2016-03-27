@@ -25,6 +25,9 @@ body{
    	color:#fff;
    	font-family:'微软雅黑';
 }
+body{
+	margin: 0;                                         /*取消body默认的外边距8px*/
+}
 
 img{
 	max-width: 100%;                               /*图片响应式的重要代码，防止图片被拉伸*/
@@ -35,21 +38,21 @@ img{
 }
 #container{
 	width: 75%;
-	margin: 0 auto;
+	margin: auto;	
+}
+@media screen and (max-width: 640px) {
+	#container{
+	width: 95%;
+	}
 }
 .content-wrap{
-	width: 100%;
 	padding-bottom: 50px;
 	margin: 70px auto;
 	background-color: #fff;
 	box-shadow: 0 4px 10px #333;
 	position: relative;
 }
-@media screen and (max-width: 640px) {
-	.content-wrap{
-	width: 95%;
-	}
-}
+
 .content-wrap::before{
 	content: "";
 	position: absolute;
@@ -65,7 +68,6 @@ img{
 }
 /*头部内容 包含头像和FE背景*/
 .header{
-	width:98%;
 	height:300px;
 	margin: 0 auto;
 	text-align: center;
