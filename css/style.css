@@ -3,8 +3,14 @@ html{
 	font-size:62.5%;
 }
 body{
+	margin: 0;   
    	height: 100%;
    	width:100%;
+   	background:#e8e8e8; 
+   	color:#fff;
+   	font-family:'微软雅黑';
+   	background: url(../images/1.jpg) no-repeat center center;
+   	background-size: cover;
    
 }
 a{
@@ -19,14 +25,6 @@ h1{
 }
 h2{
 	font-size: 3rem;
-}
-body{
-   	background:#e8e8e8; 
-   	color:#fff;
-   	font-family:'微软雅黑';
-}
-body{
-	margin: 0;                                         /*取消body默认的外边距8px*/
 }
 
 img{
