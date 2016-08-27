@@ -1,5 +1,6 @@
 window.onload = function() {
-    document.getElementsByTagName("body")[0].style.display = "block";
+    document.getElementById("loading").style.display = "none";
+    document.getElementById("page").style.display = "block";
     //平台、设备和操作系统 
     var system = {
         win: false,
