@@ -49,6 +49,7 @@ img{
 	background-color: #fff;
 	box-shadow: 0 4px 10px #333;
 	position: relative;
+
 }
 
 .content-wrap::before{
@@ -71,6 +72,8 @@ img{
 	text-align: center;
 	background: url(../images/header-bg.jpg) no-repeat center center;
 	padding-top: 10px;
+	position:relative;
+	top:20px;
 }
 @media screen and (max-width: 700px) {
 	.header{
@@ -89,9 +92,15 @@ img{
 	border-radius: 50%;
 	position: relative;
 	top:20px;
+	transition: .3s;
+	box-shadow: 0 0 0 10px #fff;
 
 }
-
+.header img:hover{
+	transform:scale(1.1);
+	border:4px solid rgba(135, 110, 95, 0.5);
+	box-shadow: 0 0 60px 1px #fff;
+}
 /*文字部分*/
 .title h1{
 	position: relative;
