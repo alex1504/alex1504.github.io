@@ -83,6 +83,25 @@ img
 
     background: url(../images/crab.gif) no-repeat;
 }
+@media screen and (max-width: 640px){
+    .content-wrap::before
+{
+    position: absolute;
+    z-index: -9999;
+    top: -80px;
+    left: 50%;
+
+    display: block;
+
+    width: 200px;
+    height: 200px;
+    margin-left: -100px;
+
+    content: '';
+
+    background: url(../images/crab.png) no-repeat;
+}
+}
 /*头部内容 包含头像和FE背景*/
 .header
 {

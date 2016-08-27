@@ -19,6 +19,5 @@ window.onload = function() {
         weibo.href="http://weibo.com/alex1504";
     } else {
         weibo.href="http://weibo.cn/alex1504";
-        avatar.href="images/crab.png";
     }
 };
