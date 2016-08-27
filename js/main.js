@@ -1,12 +1,5 @@
-function isImgLoaded(){
-    var img = document.getElementsByTagName("img");
-    img.onload = function(){
-        console.log("ok");
-    };
-}
-
-
 window.onload = function() {
+    document.getElementsByTagName("body")[0].style.display = "block";
     //平台、设备和操作系统 
     var system = {
         win: false,
