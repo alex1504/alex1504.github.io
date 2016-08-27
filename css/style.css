@@ -71,23 +71,6 @@ img
     {
         width: 95%;
     }
-    .content-wrap::before
-    {
-        position: absolute;
-        z-index: -9999;
-        top: -80px;
-        left: 50%;
-
-        display: block;
-
-        width: 200px;
-        height: 200px;
-        margin-left: -100px;
-
-        content: '';
-
-        background: url(../images/crab.png) no-repeat;
-    }
 }
 .content-wrap
 {
@@ -116,6 +99,26 @@ img
     content: '';
 
     background: url(../images/crab.gif) no-repeat;
+}
+@media screen and (max-width: 640px)
+{
+    .content-wrap::before
+    {
+        position: absolute;
+        z-index: -9999;
+        top: -80px;
+        left: 50%;
+
+        display: block;
+
+        width: 200px;
+        height: 200px;
+        margin-left: -100px;
+
+        content: '';
+
+        background: url(../images/crab.png) no-repeat;
+    }
 }
 /*头部内容 包含头像和FE背景*/
 .header
@@ -157,15 +160,14 @@ img
 
     transition: .3s;
 
-    border-radius: 50%;
     border: 10px solid #fff;
+    border-radius: 50%;
 }
 .header img:hover
 {
     transform: scale(1.1);
 
     border: 8px solid rgba(135, 110, 95, .5);
-
 }
 
 
