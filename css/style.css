@@ -1,164 +1,220 @@
 /*初始化*/
-html{
-	font-size:62.5%;
+html
+{
+    font-size: 62.5%;
 }
-body{
-	margin: 0;   
-   	height: 100%;
-   	width:100%;
-   	background:#e8e8e8; 
-   	color:#fff;
-   	font-family:'微软雅黑';
-   	background: url(../images/1.jpg) no-repeat center center;
-   	background-size: cover;
-   
+body
+{
+    font-family: '微软雅黑';
+
+    width: 100%;
+    height: 100%;
+    margin: 0;
+
+    color: #fff;
+    background: #e8e8e8;
+    background: url(../images/1.jpg) no-repeat center center;
+    background-size: cover;
 }
-a{
-	text-decoration: none;
+a
+{
+    text-decoration: none;
 }
-h1,h2{
-	color: #69c3b5;
-	
+h1,
+h2
+{
+    color: #69c3b5;
 }
-h1{
-	font-size: 5rem;
+h1
+{
+    font-size: 5rem;
 }
-h2{
-	font-size: 3rem;
+h2
+{
+    font-size: 3rem;
 }
 
-img{
-	max-width: 100%;                               /*图片响应式的重要代码，防止图片被拉伸*/
+img
+{
+    max-width: 100%;                               /*图片响应式的重要代码，防止图片被拉伸*/
 }
 
-.title{
-	text-align: center;
+.title
+{
+    text-align: center;
 }
-#container{
-	width: 75%;
-	margin: auto;	
+#container
+{
+    width: 75%;
+    margin: auto;
 }
-@media screen and (max-width: 640px) {
-	#container{
-	width: 95%;
-	}
+@media screen and (max-width: 640px)
+{
+    #container
+    {
+        width: 95%;
+    }
 }
-.content-wrap{
-	padding-bottom: 50px;
-	margin: 70px auto;
-	background-color: #fff;
-	box-shadow: 0 4px 10px #333;
-	position: relative;
+.content-wrap
+{
+    position: relative;
 
+    margin: 70px auto;
+    padding-bottom: 50px;
+
+    background-color: #fff;
+    box-shadow: 0 4px 10px #333;
 }
 
-.content-wrap::before{
-	content: "";
-	position: absolute;
-	display: block;
-	width: 200px;
-	height: 200px;
-	background: url(../images/crab.gif) no-repeat;
-	top:-100px;
-	left:50%;
-	margin-left: -100px;
-	z-index: -9999;
+.content-wrap::before
+{
+    position: absolute;
+    z-index: -9999;
+    top: -100px;
+    left: 50%;
 
+    display: block;
+
+    width: 200px;
+    height: 200px;
+    margin-left: -100px;
+
+    content: '';
+
+    background: url(../images/crab.gif) no-repeat;
 }
 /*头部内容 包含头像和FE背景*/
-.header{
-	height:300px;
-	margin: 0 auto;
-	text-align: center;
-	background: url(../images/header-bg.jpg) no-repeat center center;
-	padding-top: 10px;
-	position:relative;
-	top:20px;
-}
-@media screen and (max-width: 700px) {
-	.header{
-	background: url(../images/header-bg-sm.jpg) no-repeat center center;
-}
-}
-@media screen and (max-width: 640px) {
-	.header{
-	background: none;
-}
-}
-.header img{
-	display: inline-block;
-	width: 250px;
-	height: 250px;
-	border-radius: 50%;
-	position: relative;
-	top:20px;
-	transition: .3s;
-	box-shadow: 0 0 0 10px #fff;
+.header
+{
+    position: relative;
+    top: 20px;
 
+    height: 300px;
+    margin: 0 auto;
+    padding-top: 10px;
+
+    text-align: center;
+
+    background: url(../images/header-bg.jpg) no-repeat center center;
 }
-.header img:hover{
-	transform:scale(1.1);
-	border:4px solid rgba(135, 110, 95, 0.5);
-	box-shadow: 0 0 60px 1px #fff;
+@media screen and (max-width: 700px)
+{
+    .header
+    {
+        background: url(../images/header-bg-sm.jpg) no-repeat center center;
+    }
+}
+@media screen and (max-width: 640px)
+{
+    .header
+    {
+        background: none;
+    }
+}
+.header img
+{
+    position: relative;
+    top: 20px;
+
+    display: inline-block;
+
+    width: 250px;
+    height: 250px;
+
+    transition: .3s;
+
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #fff;
+}
+.header img:hover
+{
+    transform: scale(1.1);
+
+    border: 4px solid rgba(135, 110, 95, .5);
+    box-shadow: 0 0 60px 1px #fff;
 }
 /*文字部分*/
-.title h1{
-	position: relative;
+.title h1
+{
+    position: relative;
 }
-@media screen and (min-width: 1200px) {
-	.title h1::before, .title h1::after{
-	content: "";
-	display: inline-block;
-	height: 20%;
-	width: 90px;
-	background:#69c3b5;
-	position: absolute;
-	top: 25px;
-	}
-	.title h1::before{
-		left:300px;
-	}
-	.title h1::after{
-		right:300px;
-	}
+@media screen and (min-width: 1200px)
+{
+    .title h1::before,
+    .title h1::after
+    {
+        position: absolute;
+        top: 25px;
+
+        display: inline-block;
+
+        width: 90px;
+        height: 20%;
+
+        content: '';
+
+        background: #69c3b5;
+    }
+    .title h1::before
+    {
+        left: 300px;
+    }
+    .title h1::after
+    {
+        right: 300px;
+    }
 }
 /*导航部分*/
-.nav{
-	margin: 30px auto 0;
+.nav
+{
+    margin: 30px auto 0;
 }
-.nav div{
-	width: 80%;                           /*不定义高度，这样可以随着宽度等比例缩小适应小屏幕*/
-	margin: 30px auto 0;
+.nav div
+{
+    width: 80%;                           /*不定义高度，这样可以随着宽度等比例缩小适应小屏幕*/
+    margin: 30px auto 0;
 }
-.nav div a{
-	width: 80%;
-	display: block;
-	margin:0 auto;
-	font-size: 0;    
-	position:relative; 
-	overflow:hidden;                 /*去除a标签之间默认的上下间距4px*/
+.nav div a
+{
+    font-size: 0;
+
+    position: relative;
+
+    display: block;
+    overflow: hidden;                 /*去除a标签之间默认的上下间距4px*/
+
+    width: 80%;
+    margin: 0 auto;
 }
-.nav div a::before{
-	width: 80px;
-    height: 115px;
-    top: 0px;
-    left: 0px;
-	content: "";
+.nav div a::before
+{
     position: absolute;
+    top: 0;
+    left: 0;
+
     overflow: hidden;
+
+    width: 80px;
+    height: 115px;
+
+    content: '';
     transition: 1s ease-in-out;
     transform: translateX(-150px) skewX(-25deg);
-	background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 100%);
-}
-.nav a:hover{
-	opacity: 0.8;
-}
-.nav div a:hover::before{
-	transform: translateX(900px) skewX(-25deg);
 
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, 0) 100%);
 }
-@media screen and (max-width: 960px) {
-	.nav div{
-		margin-top: 10px;	
-	}
+.nav a:hover
+{
+    opacity: .8;
+}
+.nav div a:hover::before
+{
+    transform: translateX(900px) skewX(-25deg);
+}
+@media screen and (max-width: 960px)
+{
+    .nav div
+    {
+        margin-top: 10px;
+    }
 }
