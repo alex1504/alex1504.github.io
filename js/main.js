@@ -1,6 +1,6 @@
 
 window.onload = function() {
-    document.getElementById("loading").css("display","none");
+    document.getElementById("loading").style.display = 'none';
     //平台、设备和操作系统 
     var system = {
         win: false,
