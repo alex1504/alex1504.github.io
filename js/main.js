@@ -1,6 +1,6 @@
 window.onload = function() {
     // 隐藏loading模块，显示主体
-    document.getElementById("m-loading").style.display = "none";
+    document.getElementById("m-loading").style['z-index'] = "-9999";
     document.getElementById("page").style.display = "block";
     //平台、设备和操作系统 
     var system = {
