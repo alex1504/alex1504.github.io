@@ -1,5 +1,6 @@
 window.onload = function() {
-    document.getElementById("loading").style.display = "none";
+    // 隐藏loading模块，显示主体
+    document.getElementById("m-loading").style.display = "none";
     document.getElementById("page").style.display = "block";
     //平台、设备和操作系统 
     var system = {
