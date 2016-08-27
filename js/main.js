@@ -12,11 +12,13 @@ window.onload = function() {
     system.mac = p.indexOf("Mac") === 0;
     system.x11 = (p == "X11") || (p.indexOf("Linux") === 0);
     system.ipad = (navigator.userAgent.match(/iPad/i) !== null) ? true : false;
-    //移动和PC分别跳转不同页面
+    //移动和PC分别跳转不同页面->gif图片更换png
     var weibo = document.querySelector("#weibo") || document.getElementById("weibo");
+    var avatar = document.querySelector("#avatar") || document.getElementById("avatar");
     if (system.win || system.mac || system.xll || system.ipad) {
         weibo.href="http://weibo.com/alex1504";
     } else {
         weibo.href="http://weibo.cn/alex1504";
+        avatar.href="images/crab.png";
     }
 };
