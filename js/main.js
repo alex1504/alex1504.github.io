@@ -1,6 +1,4 @@
 
-
-document.write("loading...");
 window.onload = function() {
     //平台、设备和操作系统 
     var system = {
