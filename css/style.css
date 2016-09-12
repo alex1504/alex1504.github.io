@@ -227,13 +227,13 @@ img
 .nav div a::before
 {
     position: absolute;
-    top: 0;
+    top: -150%;
     left: 0;
 
     overflow: hidden;
 
     width: 80px;
-    height: 115px;
+    height: 400%;
 
     content: '';
     transition: 1s ease-in-out;
