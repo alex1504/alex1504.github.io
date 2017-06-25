@@ -237,9 +237,12 @@ img {
 .nav .item a {
     position: relative;
     display: block;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
     color: #fff;
     /*去除a标签之间默认的上下间距4px*/
+    font-size: 0;
 }
 
 .nav .item a::before {
@@ -280,12 +283,10 @@ img {
         width: 80%;
     }
     .nav .item .iconfont {
-        font-size: 30px;
+        font-size: 20px;
     }
     .nav .item .text {
-        position: relative;
-        top: -4px;
-        font-size: 22px;
+        font-size: 18px;
     }
 }
 
