@@ -48,5 +48,5 @@
             weibo.href = "http://weibo.cn/alex1504";
         }
     }
-    handleWeiboHref()
+    //handleWeiboHref()
 })();

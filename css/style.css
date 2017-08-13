@@ -70,6 +70,7 @@ img {
     margin: 70px auto;
     padding-bottom: 50px;
     background-color: #fff;
+    -webkit-box-shadow: 0 4px 10px #333;
     box-shadow: 0 4px 10px #333;
 }
 
@@ -132,12 +133,14 @@ img {
     display: inline-block;
     width: 250px;
     height: 250px;
+    -webkit-transition: .3s;
     transition: .3s;
     border: 10px solid #fff;
     border-radius: 50%;
 }
 
 .header img:hover {
+    -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
 
@@ -175,6 +178,7 @@ img {
 }
 
 .nav div {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 70%;
     /*不定义高度，这样可以随着宽度等比例缩小适应小屏幕*/
@@ -183,25 +187,54 @@ img {
 
 .nav .item {
     position: relative;
-    -webkit-transition: all .3s;
-    transition: all .3s;
+    -webkit-transition: all .6s;
+    transition: all .6s;
     background-color: #333;
     height: 120px;
     line-height: 120px;
     text-align: center;
     font-size: 30px;
+    overflow: hidden;
 }
 
-.nav .item:hover {
-    -webkit-transform: translateY(-4px);
-    transform: translateY(-4px);
+@-webkit-keyframes scale {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+    to {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2)
+    }
+}
+
+@keyframes scale {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+    to {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2)
+    }
+}
+
+.nav .item:hover a {
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-name: scale;
+    animation-name: scale;
+    -webkit-animation-duration: 1.2s;
+    animation-duration: 1.2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
 }
 
 .nav .item:hover::after {
     content: "";
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, .2);
+    background-color: rgba(66, 66, 66, .6);
     display: block;
     position: absolute;
     z-index: 2;
@@ -214,22 +247,22 @@ img {
     z-index: 3;
 }
 
-.nav .item.item-blog {
+.nav .item.item-blog a {
     background: url('../images/blog_bg.jpg') no-repeat center center;
     background-size: cover;
 }
 
-.nav .item.item-jianshu {
+.nav .item.item-jianshu a {
     background: url('../images/jianshu_bg.jpg') no-repeat center center;
     background-size: cover;
 }
 
-.nav .item.item-weibo {
+.nav .item.item-weibo a {
     background: url('../images/weibo_bg.jpg') no-repeat center center;
     background-size: cover;
 }
 
-.nav .item.item-lofter {
+.nav .item.item-lofter a {
     background: url('../images/lofter_bg.jpg') no-repeat center center;
     background-size: cover;
 }
@@ -253,13 +286,23 @@ img {
     width: 80px;
     height: 400%;
     content: '';
+    -webkit-transition: .6s ease-in-out;
     transition: .6s ease-in-out;
+    -webkit-transform: translateX(-150px) skewX(-25deg);
     transform: translateX(-150px) skewX(-25deg);
     background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, 0) 100%);
 }
 
 .nav .item a:hover::before {
+    -webkit-transform: translateX(900px) skewX(-25deg);
     transform: translateX(900px) skewX(-25deg);
+}
+
+.nav .item .box {
+    display: inline-block;
+    height: 100%;
+    max-width: 50px;
+    margin-left: -100px;
 }
 
 .nav .item .iconfont {
@@ -287,6 +330,9 @@ img {
     }
     .nav .item .text {
         font-size: 18px;
+    }
+    .nav .item .box {
+        margin-left: -20px;
     }
 }
 
