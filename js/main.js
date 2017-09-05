@@ -49,4 +49,20 @@
         }
     }
     //handleWeiboHref()
+
+    function bindEvent() {
+        var avatarBox = document.querySelector("#avatar-box");
+        var jpgAvatar = document.querySelector("#avatar");
+        var gifAvatar = document.querySelector("#avatar-gif");
+
+        avatarBox.addEventListener('mouseenter', function() {
+            jpgAvatar.classList.value = 'z-hide';
+            gifAvatar.classList.value = '';
+        })
+        avatarBox.addEventListener('mouseleave', function() {
+            gifAvatar.classList.value = 'z-hide';
+            jpgAvatar.classList.value = '';
+        })
+    }
+    bindEvent()
 })();
