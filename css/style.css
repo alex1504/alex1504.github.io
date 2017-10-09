@@ -265,6 +265,11 @@ img {
     background-size: cover;
 }
 
+.nav .item.item-github a {
+    background: url('../images/github_bg.jpg') no-repeat center center;
+    background-size: cover;
+}
+
 .nav .item.item-weibo a {
     background: url('../images/weibo_bg.jpg') no-repeat center center;
     background-size: cover;
