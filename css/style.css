@@ -185,7 +185,7 @@ img {
     margin: 30px auto 0;
 }
 
-.nav div {
+.nav>div {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 70%;
@@ -312,10 +312,9 @@ img {
 }
 
 .nav .item .box {
-    display: inline-block;
+    display: block;
     height: 100%;
-    max-width: 50px;
-    margin-left: -100px;
+    width: 100%;
 }
 
 .nav .item .iconfont {
@@ -343,9 +342,6 @@ img {
     }
     .nav .item .text {
         font-size: 18px;
-    }
-    .nav .item .box {
-        margin-left: -20px;
     }
 }
 
