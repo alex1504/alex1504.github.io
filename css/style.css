@@ -88,7 +88,7 @@ img {
     height: 200px;
     margin-left: -100px;
     content: '';
-    background: url("http://qiniu.huzerui.com/home/crab.gif") no-repeat;
+    background: url(http://qiniu.huzerui.com/home/crab.gif) no-repeat;
 }
 
 @media screen and (max-width: 640px) {
@@ -116,7 +116,7 @@ img {
     margin: 0 auto;
     padding-top: 10px;
     text-align: center;
-    background: url("http://qiniu.huzerui.com/home/header-bg.jpg") no-repeat center center;
+    background: url(http://qiniu.huzerui.com/home/header-bg.jpg) no-repeat center center;
 }
 
 @media screen and (max-width: 700px) {
