@@ -275,8 +275,8 @@ img {
     background-size: cover;
 }
 
-.nav .item.item-lofter a {
-    background: url('../images/lofter_bg.jpg') no-repeat center center;
+.nav .item.item-juejin a {
+    background: url('../images/juejin_bg.jpg') no-repeat center center;
     background-size: cover;
 }
 
