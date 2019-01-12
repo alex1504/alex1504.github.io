@@ -12,7 +12,7 @@
             './images/jianshu_bg.jpg',
             './images/github_bg.jpg',
             './images/weibo_bg.jpg',
-            './images/lofter_bg.jpg'
+            './images/juejin_bg.jpg'
         ]
         var imgLen = imgArr.length;
         var loadedLen = 0;
