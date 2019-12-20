@@ -71,7 +71,7 @@ img {
 
 .content-wrap {
     position: relative;
-    margin: 70px auto;
+    margin: 70px auto 20px;
     padding-bottom: 50px;
     background-color: #fff;
     -webkit-box-shadow: 0 4px 10px #333;
@@ -344,7 +344,13 @@ img {
         font-size: 18px;
     }
 }
-
+/* footer-info */
+.footer-info{
+    text-align: center;
+    color: #3a3a3a;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
 
 /* loading样式 */
 
